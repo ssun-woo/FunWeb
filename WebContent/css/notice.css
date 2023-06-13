@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* notice.jsp UI */
+
+/* 서브 메인 이미지 */
+#sub_img_center {
+	width: 971px;
+	height: 179px;
+	background-image: url("../images/center/sub_back.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#notice {
+	width: 670px;
+	border-collapse: collapse;
+}
+
+#notice th {
+	height: 20px;
+	padding: 5px;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold; /* 글자를 진하게 */
+	/* 문제) 각 열 제목 영문자 첫글자만 영문 대문자로 변경하는 css속성을 사용해 보자 */
+	text-transform: capitalize;
+	/* 문제) ../images/center/t_back.jpg 이미지가 있다. 이미지를 정중앙 배치하여
+	고객 게시판 제목 배경으로 해서 수평 x축으로 반복해서 배치해보자 */
+	background-image: url("../images/center/t_back.jpg");
+	background-repeat: repeat-x;
+	background-position: center center;
+}
+
+#notice td {
+	/* 문제) 글자를 수평 중앙 정렬, 상하 안여백은 6px, 좌우 안여백은 0px, 밑줄 점선을 1px, 점선색을 #999로 표현 */
+	text-align: center;
+	padding: 6px 0px;
+	border-bottom-color: #999;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+
+/* 문제) Title 부분이 중앙정렬 되어서 보기 좋지않음
+	왼쪽 정렬 시키고 안여백을 14px로 지정해서 들여쓰기 처리해서 보기 좋게 만들자*/
+#notice td.left {
+	text-align: left;
+	padding: 0px 0px 0px 14px;
+	/* padding-left: 14px; */
+}
+
+/* 문제) 클래스 서택자 tno를 활용해서 테두리 좌상단, 좌하단 5px 둥글게 처리해보고
+		너비를 50px로 지정하자 */
+#notice .tno {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	width: 50px;
+}
+
+/* 문제) 클래스 선택자 ttitle을 활용해서 너비를 400px, 글자 간격을 0.7em 조절 */
+#notice .ttitle {
+	width: 400px;
+	letter-spacing: 0.7em;
+}
+
+#notice .twrite {
+	width: 100px;
+}
+
+#notice .tdate {
+	width: 50px;
+}
+
+#notice .tread {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width: 50px;
+}
+
+/* 문제) 검색어 입력폼과 search부분 아이디 선택자 table_search를 활용해서 오른쪽에 배치하고
+		바깥위쪽여백 15px, 바깥오른쪽 여백 5px, 바깥아래쪽 여백 10px, 바깥 왼쪽 여백 0px로 설정 */
+#table_search {
+	float: right;
+	margin: 15px 5px 10px 0px;
+}
+
+#table_search .input_box {
+	width: 200px;
+	height: 20px;
+	border: 1px solid #333;
+	border-radius: 10px; /* 테두리를 둥글게 처리하는 css3 속성 */
+	background-color: #FEFDED;
+}
+
+#table_search .btn {
+	width: 90px;
+	height: 23px;
+	margin: 0px 0px 0px 5px;
+	padding: 2px;
+	border: 1px solid #999;
+	color: #FFF;
+	border-radius: 10px;
+	background-image: url("../images/center/t_back.jpg");
+	background-repeat: repeat-x;
+	background-position: center center;
+}
+
+#page_control {
+	text-align: center;
+	margin-top: 20px; /* 바깥 상단 여백 20px 지정 */
+}
+
+#page_control a {
+	text-decoration: none;
+	padding: 2px 5px;
+	margin: 0px 5px;
+	color: #333;
+}
+
+#page_control a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #F90;
+}
+
+/* 문제) 게시판 제목 리스트에 마우스오버시 배경색을 #EEFDFF;또는 오렌지색으로 나오게 하고
+		동시에 손가락 모양으로 마우스 포인터 변경 */
+#notice tr:hover {
+	background-color: #EEFDFF;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
